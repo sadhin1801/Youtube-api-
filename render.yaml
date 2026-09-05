@@ -1,7 +1,5 @@
 services:
   - type: web
-    name: my-song-api
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    name: youtube-api-pulc
+    runtime: docker
     plan: free
